@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Flash!</string>
+    <string name="app_name">玩转北理</string>
+    
+    
+    <string name="service_menu_eat">美食</string>
+    <string name="service_menu_play">娱乐</string>
+    <string name="service_menu_hotel">宾馆</string>
+    <string name="service_menu_traffic">交通</string>
+    
+    
+    <string name="downloading">数据更新中...</string>
+    
+    <string name="add_new_rest_name">名称</string>
+    <string name="add_new_rest_location">位置</string>
+    <string name="add_new_rest_desc">描述</string>
+    <string name="add_new_rest_issale">送外卖</string>
+    <string name="add_new_rest_isrest">饭店</string>
+    <string name="add_new_rest_isshitang">食堂</string>
+    <string name="add_new_rest_phone">电话</string>
+    
+    <string name="change_campus">更换校区</string>
+    <string name="exitMessage">确定要退出 玩转北理 么？</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="sys_config">设置</string>
+    
+    <string name="auto_update_yes">开启自动更新</string>
+    <string name="auto_update_not">关闭自动更新</string>
+    
+    
+    <string name="bit_zol">中关村校区</string>
+    <string name="bit_lit">良乡校区</string>
+    
+</resources>

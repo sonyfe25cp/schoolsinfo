@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  
+  	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+		<TableRow>
+			<TextView android:text="@string/add_new_rest_name" android:padding="3dip" 
+			>
+			</TextView>
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:padding="3dip"
+				android:gravity="left"
+				android:autoLink="web"
+				android:textColor="#196FC0"
+				></EditText>
+		</TableRow>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+		<TableRow>
+			<TextView android:text="@string/add_new_rest_location" android:padding="3dip" >
+			</TextView>
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:padding="3dip"
+				android:gravity="left"
+				android:autoLink="web"
+				android:textColor="#196FC0"
+				></EditText>
+		</TableRow>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+		<TableRow>
+			<TextView android:text="@string/add_new_rest_desc" android:padding="3dip" >
+			</TextView>
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:padding="3dip"
+				android:gravity="left"
+				android:autoLink="web"
+				android:maxLines="5"
+				android:minLines="3"
+				android:textColor="#196FC0"
+				></EditText>
+		</TableRow>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+		<TableRow>
+			<CheckBox android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/add_new_rest_issale"
+				>
+			</CheckBox>
+			<CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/add_new_rest_isrest"
+			></CheckBox>
+			<CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/add_new_rest_isshitang"
+			></CheckBox>
+		</TableRow>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+		<TableRow>
+			<TextView android:text="@string/add_new_rest_phone" android:padding="3dip" >
+			</TextView>
+			<EditText android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:padding="3dip"
+				android:gravity="left"
+				android:autoLink="web"
+				android:textColor="#196FC0"
+				></EditText>
+		</TableRow>
+		<View android:layout_height="2dip" android:background="#BFBFBF" />
+	</TableLayout>
+  
+</LinearLayout>

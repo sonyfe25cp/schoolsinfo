@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schools>
+	<school name="北京理工大学" id="1">
+		<campus id="1">本部校区</campus>
+		<campus id="2">良乡校区</campus>
+	</school>
+	<school name="中央财经大学" id="2">
+		<campus id="3">本部校区</campus>
+		<campus id="4">沙河校区</campus>
+	</school>
+</schools>

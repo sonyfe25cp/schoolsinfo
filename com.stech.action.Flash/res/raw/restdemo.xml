@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurants>
+	<restaurant>
+		<id>1</id>
+		<name>兴隆小馆</name>
+		<location>小南门旁边</location>
+		<desc>也叫做天天兴隆</desc>
+		<type>0</type>
+		<phoneList>
+			<phone>123123</phone>
+			<phone>123221</phone>
+		</phoneList>
+		<score>4</score>
+		<imgUrl>http://123/123.jpg</imgUrl>
+		<menuUrl>http://1231232.jpg</menuUrl>
+		<defaultRank>10</defaultRank>
+	</restaurant>
+</restaurants>

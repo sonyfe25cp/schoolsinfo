@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+	android:title="添加新店"
+	android:checkable="true" 
+	android:enabled="true"
+	android:icon="@drawable/icon"
+	android:id="@+id/add_new_rest"
+	>
+	</item>
+</menu>

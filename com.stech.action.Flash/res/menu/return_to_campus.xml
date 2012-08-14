@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:title="@string/change_campus"
+	 android:enabled="true" 
+	 android:checkable="false" 
+	 android:visible="true"
+	 android:id="@+id/change_campus"
+	 ></item>
+	<item android:title="@string/sys_config"
+	android:id="@+id/sys_config"
+	android:enabled="true"  
+	android:checkable="true" 
+	android:visible="true" 
+	android:checked="false"></item>
+</menu>
