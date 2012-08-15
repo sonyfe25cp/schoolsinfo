@@ -15,6 +15,11 @@ import com.stech.model.School;
 import com.stech.utils.Information;
 import com.stech.utils.Logger;
 
+/**
+ * @author ChenJie
+ * 
+ * 学校选择界面
+ */
 public class MainAction extends Activity{
 	
 	private String LOGTAG="MainAction";

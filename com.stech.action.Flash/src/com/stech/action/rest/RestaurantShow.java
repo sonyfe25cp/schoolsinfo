@@ -1,4 +1,4 @@
-package com.stech.action;
+package com.stech.action.rest;
 
 import android.app.TabActivity;
 import android.content.Intent;

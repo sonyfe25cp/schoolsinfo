@@ -1,4 +1,4 @@
-package com.stech.action;
+package com.stech.action.advice;
 
 import android.app.Activity;
 

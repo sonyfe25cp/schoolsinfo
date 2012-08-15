@@ -10,6 +10,11 @@ import com.stech.R;
 import com.stech.step.BITMainAction;
 import com.stech.utils.Logger;
 
+/**
+ * @author ChenJie
+ *
+ * 过渡画面
+ */
 public class Flash extends Activity {
     /** Called when the activity is first created. */
     

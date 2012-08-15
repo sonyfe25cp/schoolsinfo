@@ -1,21 +1,13 @@
-package com.stech.action;
+package com.stech.action.traffic;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.stech.R;
-
-public class AddNewRestAction extends Activity{
-
+public class TrafficShow extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.add_new_rest);
-		
-		
-		
 	}
 
 	@Override
@@ -29,7 +21,4 @@ public class AddNewRestAction extends Activity{
 		// TODO Auto-generated method stub
 		super.onResume();
 	}
-
-	
-	
 }

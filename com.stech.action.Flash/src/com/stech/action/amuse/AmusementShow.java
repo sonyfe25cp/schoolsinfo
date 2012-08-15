@@ -1,4 +1,4 @@
-package com.stech.action;
+package com.stech.action.amuse;
 
 import android.app.Activity;
 

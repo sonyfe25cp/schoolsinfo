@@ -1,4 +1,4 @@
-package com.stech.action;
+package com.stech.action.hotel;
 
 import android.app.Activity;
 import android.os.Bundle;

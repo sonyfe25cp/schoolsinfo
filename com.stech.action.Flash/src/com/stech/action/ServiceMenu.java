@@ -9,15 +9,20 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.stech.R;
+import com.stech.action.rest.RestaurantShow;
 import com.stech.step.BITMainAction;
 import com.stech.utils.Information;
 import com.stech.utils.Tools;
 
+/**
+ * @author ChenJie
+ *
+ * 加载各种功能
+ */
 public class ServiceMenu extends Activity {
 
 	private Intent intent=null;
