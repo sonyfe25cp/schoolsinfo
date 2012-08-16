@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:orientation="vertical"
-  >
-  
-  <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:id="@+id/restaurant_details_name"
-  >
-  </TextView>
-  <RatingBar xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:id="@+id/restaurant_details_star"
-  >
-  </RatingBar>
-  <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="wrap_content"
-  android:id="@+id/restaurant_details_desc"
-  >
-  </TextView>
-  
-  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/restaurant_details_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+<!--     <RatingBar -->
+<!--         xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--         android:id="@+id/restaurant_details_star" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" > -->
+<!--     </RatingBar> -->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/restaurant_details_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
 </LinearLayout>

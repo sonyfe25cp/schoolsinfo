@@ -25,6 +25,7 @@ public class BITMainAction extends Activity{
 	private Button zol_btn;
 	private Button lit_btn;
 	
+//	private final static long zol_id=1345092986;
 	private final static long zol_id=1313291738l;
 	private final static long lit_id=1313291745l;
 	

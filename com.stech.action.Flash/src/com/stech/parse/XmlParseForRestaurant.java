@@ -16,11 +16,9 @@ import com.stech.utils.Logger;
 public class XmlParseForRestaurant {
 	private String LOGTAG="XmlParseForRestaurant";
 	private List<Restaurant> restList;
-	private InputStream inputStream;
 	private XmlPullParser parser;
 	
 	public XmlParseForRestaurant(InputStream inputStream){
-		this.inputStream=inputStream;
 		try {
 			parser=Xml.newPullParser();
 			parser.setInput(inputStream, "UTF-8");
@@ -37,13 +35,13 @@ public class XmlParseForRestaurant {
 			Restaurant restaurant=null;
 			List<String> phoneList=null;
 			while(event != XmlPullParser.END_DOCUMENT){
+				Logger.i(LOGTAG, "event:"+event);
 				switch (event) {
 					case XmlPullParser.START_DOCUMENT:
 						restList=new ArrayList<Restaurant>();
 						break;
 					case XmlPullParser.START_TAG:
 						name=parser.getName();
-//						Logger.i(LOGTAG, "NAME:"+name);
 						if(name.equals("restaurant")){
 							restaurant=new Restaurant();
 						}else if(name.equals("id")){
@@ -77,7 +75,9 @@ public class XmlParseForRestaurant {
 							phoneList=new ArrayList<String>();
 						}else if(name.equals("phone")){
 							value=parser.nextText();
-							phoneList.add(value);
+							if(value!=null&&value.length()>0){
+								phoneList.add(value);
+							}
 						}else if(name.equals("score")){
 							value=parser.nextText();
 							restaurant.setScore(Float.parseFloat(value));
@@ -87,18 +87,22 @@ public class XmlParseForRestaurant {
 						}else if(name.equals("menuurl")){
 							value=parser.nextText();
 							restaurant.setMenuUrl(value);
-						}else if(name.equals("defaultRank")){
+						}else if(name.equals("rank")){
 							value=parser.nextText();
-							restaurant.setDefaultRank(Integer.parseInt(value));
+							restaurant.setRank(Integer.parseInt(value));
 						}else if(name.equals("campusId")){
 							value=parser.nextText();
 							restaurant.setCampusId(Integer.parseInt(value));
+						}else{
+							
 						}
 						break;
 					case XmlPullParser.END_TAG:
 						name=parser.getName();
 						if(name.equals("phoneList")){
-							restaurant.setPhoneList(phoneList);
+							if(phoneList!=null&&phoneList.size()>0){
+								restaurant.setPhoneList(phoneList);
+							}
 						}else if(name.equals("restaurant")){
 							restList.add(restaurant);
 						}
@@ -113,10 +117,8 @@ public class XmlParseForRestaurant {
 			}
 			
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

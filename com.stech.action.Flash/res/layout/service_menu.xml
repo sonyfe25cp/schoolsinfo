@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  >
-	<LinearLayout
-	  xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
-	  android:orientation="vertical"
-	  android:layout_centerInParent="true"
-	  >
-	  
-	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
-	  android:drawableLeft="@drawable/icon"
-	  android:text="@string/service_menu_eat"
-	  android:id="@+id/service_menu_eat"
-	  />
-	  
-	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
-	  android:drawableLeft="@drawable/icon"
-	  android:text="@string/service_menu_play"
-	  android:id="@+id/service_menu_play"
-	  />
-	  
-	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
-	  android:drawableLeft="@drawable/icon"
-	  android:text="@string/service_menu_hotel"
-	  android:id="@+id/service_menu_hotel"
-	  />
-	  
-	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
-	  android:layout_width="wrap_content"
-	  android:layout_height="wrap_content"
-	  android:drawableLeft="@drawable/icon"
-	  android:text="@string/service_menu_traffic"
-	  android:id="@+id/service_menu_traffic"
-	  />
-	</LinearLayout>
-</RelativeLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:stretchColumns="*"
+     >
+
+    <TableRow android:paddingTop="50dp">
+        <Button
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/service_menu_eat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/icon"
+            android:text="@string/service_menu_eat" />
+        <Button
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/service_menu_play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/icon"
+            android:text="@string/service_menu_play" />
+    </TableRow>
+
+    <TableRow android:paddingTop="20dp">
+
+        <Button
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/service_menu_hotel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/icon"
+            android:text="@string/service_menu_hotel" />
+
+        <Button
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/service_menu_traffic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/icon"
+            android:text="@string/service_menu_traffic" />
+    </TableRow>
+
+</TableLayout>

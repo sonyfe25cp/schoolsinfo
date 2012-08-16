@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -75,5 +76,15 @@ public class Tools {
         }
         boolean mannual_flag=Information.getAutoUpdate(context);
         return system_flag&&mannual_flag;
+	}
+	/**
+	 * 下载数据时候的loading
+	 * @param context
+	 * @return
+	 */
+	public static Dialog downloadingDialog(Context context) {
+		ProgressDialog dialog = ProgressDialog.show(context, "", context.getResources().getText(R.string.downloading), true);
+		dialog.setCancelable(false);
+		return dialog;
 	}
 }

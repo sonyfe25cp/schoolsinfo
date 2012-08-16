@@ -6,17 +6,25 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
+/**
+ * @author ChenJie
+ *
+ * 基本网络链接
+ */
 public class Information {
 	
 //	public static final String SCHOOLINFOURL="http://schoolsinfo.omartech.com/schools.xml";
 	public static final String SCHOOLINFOURL="http://schoolsinfo.sinaapp.com/school/schoolsListForAndroid.php";
-	public static final String RESTAURANTINFOURL="http://schoolsinfo.sinaapp.com/restaurant/listForAndroid.php";
 	
-	public static final String HOTELINFOURL="";
+	static String host="http://schoolsinfo.sinaapp.com";
+//	static String host="http://www.schoolsinfo.com/schoolsinfo";
+	public static final String RESTAURANTINFOURL=host+"/restaurant/listForAndroid.php";
 	
-	public static final String AMUSEMENTINFOURL="";
+	public static final String HOTELINFOURL=host+"/hotel/listForAndroid.php";
 	
-	public static final String TRAFFICINFOURL="";
+	public static final String AMUSEMENTINFOURL=host+"/amusement/listForAndroid.php";
+	
+	public static final String TRAFFICINFOURL=host+"/traffic/listForAndroid.php";
 	
 	private static final String SCHOOLSINFO="schoolsinfo";
 	private static final String CURRENTCAMPUSID="currentcampusid";

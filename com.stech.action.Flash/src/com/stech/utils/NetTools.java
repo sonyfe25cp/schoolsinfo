@@ -38,8 +38,11 @@ public class NetTools {
 		conn.setConnectTimeout(5000);
 		try{
 			is=conn.getInputStream();
-		}catch (SocketTimeoutException e) {
+		}catch (Exception e) {
 			Logger.e(LOGTAG, e.getMessage());
+			if(is!=null){
+				is.close();
+			}
 		}
 		return is;
 	}

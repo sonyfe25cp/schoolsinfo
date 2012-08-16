@@ -13,7 +13,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.stech.R;
+import com.stech.action.amuse.AmusementShow;
+import com.stech.action.hotel.HotelShow;
 import com.stech.action.rest.RestaurantShow;
+import com.stech.action.traffic.TrafficShow;
 import com.stech.step.BITMainAction;
 import com.stech.utils.Information;
 import com.stech.utils.Tools;
@@ -42,12 +45,31 @@ public class ServiceMenu extends Activity {
 			}
 		});
 		
+		Button service_menu_amuse=(Button) findViewById(R.id.service_menu_play);
+		service_menu_amuse.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				intent = new Intent(ServiceMenu.this, AmusementShow.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button service_menu_hotel=(Button) findViewById(R.id.service_menu_hotel);
+		service_menu_hotel.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				intent = new Intent(ServiceMenu.this, HotelShow.class);
+				startActivity(intent);
+			}
+		});
+		
 		
 		Button service_menu_traffic=(Button) findViewById(R.id.service_menu_traffic);
 		service_menu_traffic.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
+				intent = new Intent(ServiceMenu.this, TrafficShow.class);
+				startActivity(intent);
 			}
 		});
 	}

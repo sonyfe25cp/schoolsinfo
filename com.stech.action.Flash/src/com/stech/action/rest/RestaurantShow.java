@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 
 import com.stech.R;
 import com.stech.custom.RestaurantCustomLayout;
@@ -34,13 +35,36 @@ public class RestaurantShow extends TabActivity{
         tabHost.addTab(tabHost.newTabSpec("shitang")
         		.setIndicator("食堂",getResources().getDrawable(R.drawable.icon))
         		.setContent(rct));
-
         tabHost.getTabWidget().getChildAt(0).setBackgroundColor(0xffFE7E01);
         tabHost.getTabWidget().getChildAt(1).setBackgroundColor(0xffDBDBDB);
         tabHost.getTabWidget().getChildAt(2).setBackgroundColor(0xffDBDBDB);
         
-//        tabHost.setCurrentTab(0);
-		
+        tabHost.setCurrentTab(0);
+        
+        /*
+         * 变换标签颜色
+         */
+        tabHost.setOnTabChangedListener(new OnTabChangeListener(){
+			@Override
+			public void onTabChanged(String tableId) {
+				Logger.i(LAGTOG, tableId);
+				if(tableId.equals("outsale")){
+					tabHost.getTabWidget().getChildAt(0).setBackgroundColor(0xffFE7E01);
+			        tabHost.getTabWidget().getChildAt(1).setBackgroundColor(0xffDBDBDB);
+			        tabHost.getTabWidget().getChildAt(2).setBackgroundColor(0xffDBDBDB);
+				}else if(tableId.equals("rest")){
+					tabHost.getTabWidget().getChildAt(1).setBackgroundColor(0xffFE7E01);
+			        tabHost.getTabWidget().getChildAt(0).setBackgroundColor(0xffDBDBDB);
+			        tabHost.getTabWidget().getChildAt(2).setBackgroundColor(0xffDBDBDB);
+				}else{
+					tabHost.getTabWidget().getChildAt(2).setBackgroundColor(0xffFE7E01);
+			        tabHost.getTabWidget().getChildAt(1).setBackgroundColor(0xffDBDBDB);
+			        tabHost.getTabWidget().getChildAt(0).setBackgroundColor(0xffDBDBDB);
+				}
+			}
+        	
+        });
+        
 	}
 
 	@Override

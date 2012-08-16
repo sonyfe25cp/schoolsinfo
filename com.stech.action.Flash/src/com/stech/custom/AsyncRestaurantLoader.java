@@ -14,6 +14,11 @@ import com.stech.data.RestaurantData;
 import com.stech.model.Restaurant;
 import com.stech.utils.Information;
 
+/**
+ * @author ChenJie
+ *
+ * 同步数据用
+ */
 public class AsyncRestaurantLoader {
 	
 	private Context activity;

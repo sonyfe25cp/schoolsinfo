@@ -77,7 +77,15 @@ public class DBOpenHelper extends SQLiteOpenHelper{
             "rank INTEGER," +
             "campusid INTEGER" +
             ");";
-    private static final String TRAFFIC_TABLE_CREATE="";
+    private static final String TRAFFIC_TABLE_CREATE=
+    		"CREATE TABLE IF NOT EXISTS " + TRAFFIC_TABLE_NAME + "(" +
+            KEY_ID + " INTEGER ," +
+            "name TEXT," +
+            "locationtype INTEGER," +
+            "stops TEXT," +
+            "traffictype INTEGER," +
+            "campusid INTEGER" +
+            ");";
 
     
 
@@ -95,7 +103,7 @@ public class DBOpenHelper extends SQLiteOpenHelper{
         db.execSQL(RESTAURANT_TABLE_CREATE);
         db.execSQL(AMUSEMENT_TABLE_CREATE);
         db.execSQL(HOTEL_TABLE_CREATE);
-//        db.execSQL(TRAFFIC_TABLE_CREATE);
+        db.execSQL(TRAFFIC_TABLE_CREATE);
         
         Logger.i(LogTag, "on create db over");
     }
