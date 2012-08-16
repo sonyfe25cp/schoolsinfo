@@ -13,15 +13,27 @@
 
 	<activity android:name=".action.MainAction" android:label="@string/app_name" android:screenOrientation="portrait" />
 	<activity android:name=".action.ServiceMenu" android:label="@string/app_name" android:screenOrientation="portrait" />
-	<activity android:name=".action.advice.AdviseAction" android:label="@string/app_name" android:screenOrientation="portrait" />
-	<activity android:name=".action.amuse.AmusementShow" android:label="@string/app_name" android:screenOrientation="portrait" />
-	<activity android:name=".action.hotel.HotelShow" android:label="@string/app_name" android:screenOrientation="portrait" />
-	<activity android:name=".action.rest.RestaurantShow" android:label="@string/app_name" android:screenOrientation="portrait" />
-	<activity android:name=".action.traffic.TrafficShow" android:label="@string/app_name" android:screenOrientation="portrait" />
-<!--	<activity android:name=".action.Tabs1" android:label="@string/app_name"/>-->
-	<activity android:name=".action.rest.AddNewRestAction" android:label="@string/app_name" android:screenOrientation="portrait" />
 	<activity android:name=".step.BITMainAction" android:label="@string/app_name" android:screenOrientation="portrait" />
+	<!-- advice -->
+	<activity android:name=".action.advice.AdviseAction" android:label="@string/app_name" android:screenOrientation="portrait" />
+	
+	<!-- rest -->
+	<activity android:name=".action.rest.RestaurantShow" android:label="@string/app_name" android:screenOrientation="portrait" />
+	<activity android:name=".action.rest.AddNewRestAction" android:label="@string/app_name" android:screenOrientation="portrait" />
+	
+	<!-- amusement -->
+	<activity android:name=".action.amuse.AmusementShow" android:label="@string/app_name" android:screenOrientation="portrait" />
+	
+	<!-- hotel -->
+	<activity android:name=".action.hotel.HotelShow" android:label="@string/app_name" android:screenOrientation="portrait" />
+	
+	<!-- traffic -->
+	<activity android:name=".action.traffic.TrafficShow" android:label="@string/app_name" android:screenOrientation="portrait" />
+
+	<!-- test -->
+<!--	<activity android:name=".action.Tabs1" android:label="@string/app_name"/>-->
     </application>
+
     <uses-sdk android:minSdkVersion="7" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 	<uses-permission android:name="android.permission.INTERNET"/>

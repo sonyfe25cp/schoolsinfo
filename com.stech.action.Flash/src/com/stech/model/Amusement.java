@@ -1,67 +1,45 @@
 ﻿package com.stech.model;
 
-public class Amusement {
+import java.util.List;
+
+public class Amusement extends RankModel{
+
+
+	public static final int KTV=1;
+	public static final int THEATER=2;
+	public static final int MALL=3;
+	private int amusetype;
 	
-	private int id;
-	private String name;//名字
-	private String location;//大概位置
-	private String desc;//描述，价位等
-	
-	private String imgUrl;//图片
-	
-	private int campusId;//校区
-private float score;
-private int defaultRank;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getLocation() {
-		return location;
-	}
-
-	public void setLocation(String location) {
-		this.location = location;
-	}
-
-	public String getDesc() {
-		return desc;
-	}
-
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
-
-	public String getImgUrl() {
-		return imgUrl;
-	}
-
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
-	}
-
-	public int getCampusId() {
-		return campusId;
-	}
-
-	public void setCampusId(int campusId) {
-		this.campusId = campusId;
-	}
+	private List<String> phoneList;// 逻辑用
+	private String phoneNum;// 存储用
 	
 	
+	public List<String> getPhoneList() {
+		return phoneList;
+	}
+	public void setPhoneList(List<String> phoneList) {
+		this.phoneList = phoneList;
+	}
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
+	public static int getKtv() {
+		return KTV;
+	}
+	public static int getTheater() {
+		return THEATER;
+	}
+	public static int getMall() {
+		return MALL;
+	}
+	public int getAmusetype() {
+		return amusetype;
+	}
+	public void setAmusetype(int amusetype) {
+		this.amusetype = amusetype;
+	}
 	
-
 }

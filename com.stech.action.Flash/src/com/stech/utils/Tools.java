@@ -20,8 +20,10 @@ public class Tools {
 	
 	public static String phoneNum(List<String> phoneList){
 		StringBuilder sb=new StringBuilder();
-		for(String phone:phoneList){
-			sb.append(phone+",");
+		if(phoneList!=null){
+			for(String phone:phoneList){
+				sb.append(phone+",");
+			}
 		}
 		if(sb.length()>0){
 			sb=sb.deleteCharAt(sb.length()-1);

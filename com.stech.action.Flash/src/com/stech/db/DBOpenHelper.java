@@ -18,9 +18,9 @@ public class DBOpenHelper extends SQLiteOpenHelper{
     public final static String SCHOOL_TABLE_NAME="schooltable";
     public final static String CAMPUS_TABLE_NAME="campustable";
     public final static String RESTAURANT_TABLE_NAME="restaurant";
-    public final static String AMUSEMENT_TABLE_NAME="amusementtable";
-    public final static String HOTEL_TABLE_NAME="hoteltable";
-    public final static String TRAFFIC_TABLE_NAME="traffictable";
+    public final static String AMUSEMENT_TABLE_NAME="amusement";
+    public final static String HOTEL_TABLE_NAME="hotel";
+    public final static String TRAFFIC_TABLE_NAME="traffic";
     
     private final static String KEY_ID="_id";
     
@@ -48,9 +48,36 @@ public class DBOpenHelper extends SQLiteOpenHelper{
         "score FLOAT," +
         "imgurl TEXT," +
         "menuurl TEXT," +
-        "defaultrank TEXT," +
+        "rank INTEGER," +
         "campusid INTEGER" +
         ");";
+    
+    private static final String AMUSEMENT_TABLE_CREATE=
+    		"CREATE TABLE IF NOT EXISTS " + AMUSEMENT_TABLE_NAME + "(" +
+            KEY_ID + " INTEGER ," +
+            "name TEXT," +
+            "location TEXT," +
+            "desc TEXT," +
+            "amusetype INTEGER," +
+            "phone TEXT," +
+            "score FLOAT," +
+            "imgurl TEXT," +
+            "rank INTEGER," +
+            "campusid INTEGER" +
+            ");";
+    private static final String HOTEL_TABLE_CREATE=
+    		"CREATE TABLE IF NOT EXISTS " + HOTEL_TABLE_NAME + "(" +
+            KEY_ID + " INTEGER ," +
+            "name TEXT," +
+            "location TEXT," +
+            "desc TEXT," +
+            "phone TEXT," +
+            "score FLOAT," +
+            "imgurl TEXT," +
+            "rank INTEGER," +
+            "campusid INTEGER" +
+            ");";
+    private static final String TRAFFIC_TABLE_CREATE="";
 
     
 
@@ -66,13 +93,15 @@ public class DBOpenHelper extends SQLiteOpenHelper{
     	db.execSQL(SCHOOL_TABLE_CREATE);
         db.execSQL(CAMPUS_TABLE_CREATE);
         db.execSQL(RESTAURANT_TABLE_CREATE);
+        db.execSQL(AMUSEMENT_TABLE_CREATE);
+        db.execSQL(HOTEL_TABLE_CREATE);
+//        db.execSQL(TRAFFIC_TABLE_CREATE);
         
         Logger.i(LogTag, "on create db over");
     }
 	
 	@Override
 	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
-		// TODO Auto-generated method stub
 		
 	}
 
