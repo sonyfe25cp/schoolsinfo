@@ -135,10 +135,6 @@ public class RestaurantDB {
 		Logger.i(LOGTAG, "id:" + restaurant.getId() + " --  campusId:"
 				+ restaurant.getCampusId());
 
-		// Logger.i(LOGTAG, "issale:"+restaurant.getIsSale());
-		// Logger.i(LOGTAG, "isrest:"+restaurant.getIsRest());
-		// Logger.i(LOGTAG, "isshitang:"+restaurant.getIsShiTang());
-
 		String sqlInsert = "insert into "
 				+ DBOpenHelper.RESTAURANT_TABLE_NAME
 				+ "(_id,name,location,desc,issale,isrest,isshitang,phone,score,imgurl,menuurl,rank,campusid) "
